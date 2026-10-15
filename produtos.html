@@ -16,7 +16,6 @@
 </head>
 
 <body id="html-body">
-	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 	<header class="site-header">
 		<div class="header-inner">
 			<a class="brand" href="./home.html" aria-label="Affinity - página inicial">
@@ -47,95 +46,38 @@
 				<div class="container">
 					<p class="eyebrow">Catálogo Affinity</p>
 					<h1>Produtos para relações comerciais que atravessam fronteiras.</h1>
-					<p>Uma curadoria de produtos brasileiros com origem conhecida, qualidade acompanhada e logística
-						preparada para cada destino.</p>
+					<p>Navegue pelas categorias ao lado e clique em um produto para ampliar a imagem.</p>
 				</div>
 			</section>
 			<section class="section">
 				<div class="container">
 					<div class="section-heading">
 						<div>
-							<p class="overline section-label">Seleção atual</p>
-							<h2>Produtos em destaque</h2>
+							<p class="overline section-label">Categorias</p>
+							<h2>Nosso catálogo</h2>
 						</div>
 						<p>Fale com a equipe para consultar disponibilidade, especificações e condições de cada lote.</p>
 					</div>
-					<div class="products-grid">
-						<article class="product-card reveal">
-							<a href="./produto-algodao.html" aria-label="Ver detalhes de Algodão brasileiro">
-								<div class="product-visual visual-cotton">
-									<span class="product-type">
-										Fibras naturais
-									</span>
-									<span class="product-stamp">
-										COTTON / BR
-									</span>
-								</div>
-								<div class="product-info">
-									<h3>Algodão brasileiro</h3>
-									<p>Fibras selecionadas para cadeias têxteis que exigem regularidade, origem
-										rastreada e padrão de qualidade.</p>
-									<div class="product-meta">
-										<span>Mato Grosso</span>
-										<strong>
-											Ver detalhes 
-											<span aria-hidden="true">→</span>
-										</strong>
-									</div>
-								</div>
-							</a>
-						</article>
-						<article class="product-card reveal">
-							<a href="./produto-cafe.html" aria-label="Ver detalhes de Café especial">
-								<div class="product-visual visual-coffee">
-									<span class="product-type">
-										Grãos selecionados
-									</span>
-									<span class="product-stamp">
-										COFFEE / BR
-									</span>
-								</div>
-								<div class="product-info">
-									<h3>Café especial</h3>
-									<p>Cafés de perfil sensorial definido, produzidos em regiões reconhecidas e
-										preparados para exportação.</p>
-									<div class="product-meta">
-										<span>Minas Gerais</span>
-										<strong>
-											Ver detalhes 
-											<span aria-hidden="true">→</span>
-										</strong>
-									</div>
-								</div>
-							</a>
-						</article>
-						<article class="product-card reveal">
-							<a href="./produto-soja.html" aria-label="Ver detalhes de Soja em grãos">
-								<div class="product-visual visual-soy">
-									<span class="product-type">
-										Commodities agrícolas
-									</span>
-									<span class="product-stamp">
-										SOYBEAN / BR
-									</span>
-								</div>
-								<div class="product-info">
-									<h3>Soja em grãos</h3>
-									<p>Soja brasileira para compradores globais, com controle de origem, padrão e
-										programação de embarque.</p>
-									<div class="product-meta">
-										<span>Goiás</span>
-										<strong>
-											Ver detalhes 
-											<span aria-hidden="true">→</span>
-										</strong>
-									</div>
-								</div>
-							</a>
-						</article>
+					<div class="catalog-layout">
+						<ul class="catalog-tree" id="catalog-tree" aria-label="Categorias de produtos"></ul>
+						<div class="catalog-content">
+							<div class="catalog-category-header">
+								<h3 id="catalog-category-title"></h3>
+								<span id="catalog-category-count"></span>
+							</div>
+							<div class="catalog-grid" id="catalog-grid"></div>
+						</div>
 					</div>
 				</div>
 			</section>
+
+			<div class="lightbox" id="lightbox" hidden>
+				<button class="lightbox-close" id="lightbox-close" type="button" aria-label="Fechar">×</button>
+				<figure>
+					<img id="lightbox-img" src="" alt="">
+					<figcaption id="lightbox-caption"></figcaption>
+				</figure>
+			</div>
 
 			<section class="cta">
 				<div class="container cta-inner">
@@ -165,7 +107,7 @@
 						<span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
 						<span>Affinity</span>
 					</a>
-					<p>Comércio exterior com ponta a ponta, clareza em cada etapa.</p>
+					<p>Oferecendo qualidade em cada produto.</p>
 				</div>
 				<div class="footer-col">
 					<h3>Navegação</h3>
@@ -176,19 +118,21 @@
 				</div>
 				<div class="footer-col">
 					<h3>Contato</h3>
-					<p>Rua Jose Pereira Liberato, 987, Sala 106</p>
-					<p>Sao Joao, Itajai - SC · 88304-401</p>
-					<a href="mailto:affinitytrade.contato@gmail.com">affinitytrade.contato@gmail.com</a>
+					<a href="https://maps.google.com/?q=Rua+Jose+Pereira+Liberato+987+Sao+Joao+Itajai+SC+88304-401" target="_blank" rel="noopener">
+						Rua José Pereira Liberato, 987, sala 107, box 52<br>São João, Itajaí - SC · CEP: 88304-401
+					</a>
 					<a href="tel:+554735150428">(47) 3515-0428</a>
 				</div>
 			</div>
 			<div class="footer-bottom">
 				<span>© 2026 Affinity Comércio e Distribuição LTDA. Todos os direitos reservados.</span>
-				<span>Operações globais, relações duradouras.</span>
+				<span>Oferecendo qualidade em cada produto</span>
 			</div>
 		</div>
 	</footer>
 	<script src="./main.js"></script>
+	<script src="./products-data.js"></script>
+	<script src="./catalog.js"></script>
 </body>
 
 </html>
