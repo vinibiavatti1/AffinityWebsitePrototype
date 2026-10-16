@@ -32,10 +32,8 @@ img { max-width: 100%; }
 
 .site-header { position: relative; z-index: 10; background: rgba(255,255,255,.97); border-bottom: 1px solid #e8eef1; }
 .header-inner { width: min(calc(100% - 48px), var(--max)); min-height: 76px; margin: 0 auto; display: flex; align-items: center; gap: 42px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-family: Manrope, sans-serif; font-weight: 800; letter-spacing: -.04em; color: var(--navy-950); font-size: 19px; white-space: nowrap; }
-.brand-mark { display: inline-flex; align-items: center; gap: 2px; width: 30px; height: 26px; }
-.brand-mark i { display: block; width: 13px; height: 22px; border: 3px solid var(--ocean); border-radius: 12px; transform: skew(-16deg) rotate(20deg); }
-.brand-mark i + i { border-color: var(--gold); transform: skew(-16deg) rotate(20deg) translateX(-5px); }
+.brand { display: inline-flex; align-items: center; gap: 4px; font-family: Manrope, sans-serif; font-weight: 800; letter-spacing: -.04em; color: var(--navy-950); font-size: 19px; white-space: nowrap; }
+.brand-mark { display: inline-block; width: 60px; height: 60px; object-fit: contain; border-radius: 6px; flex-shrink: 0; }
 .main-nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
 .main-nav a { font-size: 13px; color: #54616b; padding: 29px 0 26px; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
 .main-nav a:hover, .main-nav a[aria-current='page'] { color: var(--ocean); border-color: var(--gold); }
